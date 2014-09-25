@@ -5,6 +5,91 @@ and open the template in the editor.
 */
 /* 
     Created on : Sep 26, 2014, 12:33:10 AM
-    Author     : Sandesh
+    Author     : Pratiksha
 */
 
+body {
+    background-color: #EEE;
+    font-family: "Open Sans";
+}
+
+.title {
+    margin-top: 2em;
+    font-size: 2em;
+    margin-bottom: 3em;
+    text-align: center;
+}
+
+.title span {
+    padding: 10px;
+    background: #27AAE1;
+    color: #FFF;
+}
+
+.action-button {
+    margin-bottom: 2em;
+    font-size: 1.5em;
+}
+
+.animate {
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}
+
+.action-button {
+    padding: 10px 40px;
+    border-radius: 10px;
+    transition: .3s all;
+}
+
+.action-button,
+.action-button:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.action-button:hover {
+    transform: scale(1.1);
+}
+
+
+.blue {
+    background-color: #3498DB;
+    border-bottom: 5px solid #2980B9;
+    text-shadow: 0px -2px #2980B9;
+}
+
+.red {
+    background-color: #E74C3C;
+    border-bottom: 5px solid #BD3E31;
+    text-shadow: 0px -2px #BD3E31;
+}
+
+.green {
+    background-color: #82BF56;
+    border-bottom: 5px solid #669644;
+    text-shadow: 0px -2px #669644;
+}
+
+.yellow {
+    background-color: #F2CF66;
+    border-bottom: 5px solid #D1B358;
+    text-shadow: 0px -2px #D1B358;
+}
+
+.brown {
+    background-color: #5E5452;
+    border-bottom: 5px solid #4C413F;
+    text-shadow: 0px -2px #4C413F;
+}
+
+
+
+.operations {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.operations > div {
+    height: 5em;
+}
