@@ -9,26 +9,40 @@ and open the template in the editor.
 */
 
 body {
-    background-color: #EEE;
     font-family: "Open Sans";
+    background-color: #517fa4;
+    background-image: url(images/noise.png), -webkit-gradient(linear, left top, left bottom, from(#517fa4), to(#306088));
+    background-image: url(images/noise.png), -webkit-linear-gradient(top, #517fa4, #306088);
+    background-image: url(images/noise.png), -moz-linear-gradient(top, #517fa4, #306088);
+    background-image: url(images/noise.png), -o-linear-gradient(top, #517fa4, #306088);
+    background-image: url(images/noise.png), -ms-linear-gradient(top, #517fa4, #306088);
+    background-image: url(images/noise.png), linear-gradient(top, #517fa4, #306088);
+    background-position: 50% 50%;
+}
+
+html {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    min-height: 100%;
 }
 
 .title {
-    margin-top: 2em;
     font-size: 2em;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
+    margin-top: 0;
     text-align: center;
-}
-
-.title span {
-    padding: 10px;
     background: #27AAE1;
+    padding: 1em;
+    font-family: "Droid Serif";
+    font-weight: 300;
     color: #FFF;
 }
 
 .action-button {
     margin-bottom: 2em;
     font-size: 1.5em;
+    padding: 10px 40px;
+    border-radius: 10px;
+    line-height: 4em;
 }
 
 .animate {
@@ -36,51 +50,48 @@ body {
     -webkit-transition: all 0.1s;
 }
 
-.action-button {
-    padding: 10px 40px;
-    border-radius: 10px;
-    transition: .3s all;
-}
-
+.action-button:focus,
 .action-button,
 .action-button:hover {
     color: #FFF;
     text-decoration: none;
+    outline: none;
 }
 
+.action-button:focus,
 .action-button:hover {
-    transform: scale(1.1);
+    opacity: .85;
 }
 
 
 .blue {
     background-color: #3498DB;
     border-bottom: 5px solid #2980B9;
-    text-shadow: 0px -2px #2980B9;
+    text-shadow: 0px 2px #2980B9;
 }
 
 .red {
     background-color: #E74C3C;
     border-bottom: 5px solid #BD3E31;
-    text-shadow: 0px -2px #BD3E31;
+    text-shadow: 0px 2px #BD3E31;
 }
 
 .green {
     background-color: #82BF56;
     border-bottom: 5px solid #669644;
-    text-shadow: 0px -2px #669644;
+    text-shadow: 0px 2px #669644;
 }
 
 .yellow {
     background-color: #F2CF66;
     border-bottom: 5px solid #D1B358;
-    text-shadow: 0px -2px #D1B358;
+    text-shadow: 0px 2px #D1B358;
 }
 
 .brown {
     background-color: #5E5452;
     border-bottom: 5px solid #4C413F;
-    text-shadow: 0px -2px #4C413F;
+    text-shadow: 0px 2px #4C413F;
 }
 
 
@@ -90,6 +101,6 @@ body {
     text-align: center;
 }
 
-.operations > div {
-    height: 5em;
+.fa {
+    margin-left: 1em;
 }
